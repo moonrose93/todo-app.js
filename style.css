@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+    body {
+        transition: background-color 0.3s ease;
+        width: 100%;
+        height: 50vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+
+
+.container {
+    max-width: 600px;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    background-color: #fff; /* Container background color */
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Example: Box shadow */
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.container-top {
+    display: flex;
+    width: 320px;
+    justify-content: space-between;
+    
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.container-top input {
+    width: 200px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.delete-btn {
+    background-color: #dc3545;
+    color: white;
+    padding: 5px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+.complete-btn{
+    background-color: #28a745;
+    color: white;
+    padding: 5px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+
+.container-top button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.container-top button:hover {
+    background-color: #0056b3;
+}
+
+#tasks-left{
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.container-tasks {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#task-container {
+    list-style-type: none;
+    padding: 0;
+    width: 300px;
+    justify-content: center;
+}
+
+.completed {
+    text-decoration: line-through;
+}
+
+.btns {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.btns p {
+    cursor: pointer;
+    margin: 0 10px;
+    padding: 8px 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btns p.active {
+    background-color: #007BFF;
+    color: white;
+    border-color: #007BFF;
+}
+
+.btns p:hover {
+    background-color: #0056b3;
+    color: white;
+}
+
+.item {
+    display: flex;
+    width: 300px;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.item .list-item {
+    flex-grow: 1;
+}
+
+.item .btn-list {
+    display: flex;
+    gap: 10px;
+}
+
+.icon-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.icon-heading img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.dark {
+    display: none;
+}
+
+.light-theme .dark {
+    display: inline;
+}
+
+.dark-theme .light {
+    display: inline;
+}
+
+.dark-theme {
+    background-color: #333; /* Dark theme background color */
+    color: #fff; /* Dark theme text color */
+}
+
+.light-theme {
+    background-color: #f0f0f0; /* Light theme background color */
+    color: #000; /* Light theme text color */
+}
+
+.dark-theme .container {
+    background-color: #444; /* Dark theme container background color */
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1); /* Example: Dark theme box shadow */
+}
+
+.item-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 300px;
+}
+
+.dark-theme input,
+.dark-theme button,
+.dark-theme .btns p {
+    background-color: #555; /* Dark theme input, button, and filter background color */
+    color: #fff; /* Dark theme input, button, and filter text color */
+    border-color: #666; /* Dark theme input and button border color */
+}
+
+.dark-theme .item {
+    background-color: #555; /* Dark theme task item background color */
+    border-color: #666; /* Dark theme task item border color */
+}
+
+.dark-theme .completed {
+    text-decoration-color: #888; /* Dark theme completed task text decoration color */
+}
+
+
